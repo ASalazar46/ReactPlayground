@@ -61,7 +61,7 @@ function Square(props) {
       const history = this.state.history.slice(0, this.state.stepNumber + 1);
       const current = history[history.length - 1];
       const squares = current.squares.slice();
-      if (calculateWinner(squares) || squares[i]) {
+      if (calculateWinner(squares, this.state.stepNumber) || squares[i]) {
         return;
       }
       squares[i] = this.state.xIsNext ? "X" : "O";
@@ -86,7 +86,7 @@ function Square(props) {
     render() {
       const history = this.state.history;
       const current = history[this.state.stepNumber];
-      const winner = calculateWinner(current.squares);
+      const winner = calculateWinner(current.squares, this.state.stepNumber);
   
       const moves = history.map((step, move) => {
         const desc = move ?
@@ -100,10 +100,13 @@ function Square(props) {
       });
   
       let status;
-      if (winner) {
+      if (winner === '!!!!') {
+        status = "DRAW";
+      } else if (winner){
         status = "Winner: " + winner;
       } else {
         status = "Next player: " + (this.state.xIsNext ? "X" : "O");
+
       }
   
       return (
@@ -127,7 +130,7 @@ function Square(props) {
   
   ReactDOM.render(<Game />, document.getElementById("root"));
   
-  function calculateWinner(squares) {
+  function calculateWinner(squares, stepCount) {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -144,6 +147,10 @@ function Square(props) {
         return squares[a];
       }
     }
-    return null;
+    if (stepCount >= 9) {
+      return '!!!!';
+    } else {
+      return null;
+    }
   }
   
