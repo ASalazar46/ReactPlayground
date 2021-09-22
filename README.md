@@ -1,15 +1,4 @@
-This is the tic-tac-toe react tutorial.
+This is a repository for messing around with React.
 
-To-do:
-----------
-Display the location for each move in the format (col, row) in the move history list.
-
-Bold the currently selected item in the move list.
-
-Rewrite Board to use two loops to make the squares instead of hardcoding them.
-
-Add a toggle button that lets you sort the moves in either ascending or descending order.
-
-When someone wins, highlight the three squares that caused the win.
-
-When no one wins, display a message about the result being a draw. (ADDED)
+Works so far:
+- Tic Tac Toe react tutorial (need to add suggested additions, as requested at end of tutorial)
