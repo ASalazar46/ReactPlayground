@@ -25,6 +25,7 @@ export class Graph extends React.Component {
                 },
               ],
             },
+            maintainAspectRatio: false
         };
         return(
             <div>
