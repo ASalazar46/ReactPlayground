@@ -13,7 +13,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="grid row-start-1 col-start-2 row-end-11 col-end-13">
-          <div className="grid row-start-1 col-start-1 row-end-2 col-end-11 place-content-center bg-yellow-100 mb-4">
+          <div className="grid row-start-1 col-start-1 row-end-2 col-end-11 place-content-center bg-yellow-100 mb-4 mr-4">
             <PageHeader />
           </div>
           <div className="grid row-start-2 col-start-1 row-end-11 col-end-11">
@@ -21,10 +21,10 @@ function App() {
               <DataAverager />
             </div>
             <div className="grid row-start-1 col-start-4 row-end-10 col-end-11">
-              <div className="grid row-start-1 col-start-1 row-end-6 col-end-8 bg-blue-100">
+              <div className="grid row-start-1 col-start-1 row-end-6 col-end-8 bg-blue-100 mr-4">
                 <Graph />
               </div>
-              <div className="grid row-start-6 col-start-1 row-end-10 col-end-8 bg-indigo-100 mt-4">
+              <div className="grid row-start-6 col-start-1 row-end-10 col-end-8 bg-indigo-100 mt-4 mr-4">
                 <Map />
               </div>
             </div>
