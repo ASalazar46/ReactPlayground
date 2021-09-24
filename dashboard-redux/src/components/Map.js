@@ -6,7 +6,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 export class Map extends React.Component {
     render() {
         return(
-            <MapContainer id='mapid' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} >
+            <MapContainer id='mapid' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} className="box-border border-4 p-4">
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

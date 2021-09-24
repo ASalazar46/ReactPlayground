@@ -28,8 +28,8 @@ export class Graph extends React.Component {
             maintainAspectRatio: false
         };
         return(
-            <div>
-              <Line data={data} options={options} />
+            <div className="box-border border-4">
+              <Line className="p-4" data={data} options={options} />
             </div>
         );
     };
