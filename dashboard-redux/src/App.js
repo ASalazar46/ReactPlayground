@@ -17,10 +17,10 @@ function App() {
             <PageHeader />
           </div>
           <div className="grid row-start-2 col-start-1 row-end-11 col-end-11">
-            <div className="grid row-start-1 col-start-1 row-end-10 col-end-4 bg-green-100 mr-4">
+            <div className="grid row-start-1 col-start-1 row-end-10 col-end-6 bg-green-100 mr-4">
               <DataAverager />
             </div>
-            <div className="grid row-start-1 col-start-4 row-end-10 col-end-11">
+            <div className="grid row-start-1 col-start-6 row-end-10 col-end-11">
               <div className="grid row-start-1 col-start-1 row-end-6 col-end-8 bg-blue-100 mr-4">
                 <Graph />
               </div>
