@@ -9,22 +9,22 @@ function App() {
   return (
     <div className="App">
       <div className="grid grid-rows-10 grid-cols-12">
-        <div className="row-start-1 col-start-1 row-end-11 col-end-3">
+        <div className="grid row-start-1 col-start-1 row-end-11 col-end-2">
           <Sidebar />
         </div>
-        <div className="row-start-1 col-start-3 row-end-11 col-end-13">
-          <div className="row-start-1 col-start-1 row-end-2 col-end-11">
+        <div className="grid row-start-1 col-start-2 row-end-11 col-end-13">
+          <div className="grid row-start-1 col-start-1 row-end-2 col-end-11 place-content-center">
             <PageHeader />
           </div>
-          <div className="row-start-2 col-start-1 row-end-11 col-end-11">
-            <div className="row-start-1 col-start-1 row-end-10 col-end-4">
+          <div className="grid row-start-2 col-start-1 row-end-11 col-end-11">
+            <div className="grid row-start-1 col-start-1 row-end-10 col-end-4">
               <DataAverager />
             </div>
-            <div className="row-start-1 col-start-4 row-end-10 col-end-11">
-              <div className="row-start-1 col-start-1 row-end-6 col-end-8">
+            <div className="grid row-start-1 col-start-4 row-end-10 col-end-11">
+              <div className="grid row-start-1 col-start-1 row-end-6 col-end-8">
                 <Graph />
               </div>
-              <div className="row-start-6 col-start-1 row-end-10 col-end-8">
+              <div className="grid row-start-6 col-start-1 row-end-10 col-end-8">
                 <Map />
               </div>
             </div>
