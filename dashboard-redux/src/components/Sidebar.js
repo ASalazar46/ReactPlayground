@@ -3,23 +3,23 @@ import React from "react";
 export class Sidebar extends React.Component {
     render() {
         return (
-            <div class="grid grid-col-1 grid-row-12 grid-flow-row space-y-10">
-                <div class="row-start-1 row-end-2">
+            <div className="grid grid-col-1 grid-row-6">
+                <div className="row-start-1 text-center">
                     <button>SCEL LOGO</button>
                 </div>
-                <div class="row-start-3 row-end-4">
+                <div className="row-start-2 text-center">
                     <button>Home</button>
                 </div>
-                <div class="row-start-5 row-end-6"> 
+                <div className="row-start-3 text-center"> 
                     <button>Apple</button>
                 </div>
-                <div class="row-start-7 row-end-8">
+                <div className="row-start-4 text-center">
                     <button>Bumblebee</button>
                 </div>
-                <div class="row-start-9 row-end-10">
+                <div className="row-start-5 text-center">
                     <button>Cranberry</button>
                 </div>
-                <div class="row-start-11 row-end-12">
+                <div className="row-start-6 text-center">
                     <button>Guava</button>
                 </div>
             </div>
