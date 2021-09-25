@@ -3,8 +3,8 @@ import React from 'react';
 export class Navbar extends React.Component {
   render() {
     return (
-      <div className="w-screen h-12 min-w-min bg-red-100 grid grid-cols-10 
-      place-content-stretch text-center place-items-center">
+      <div className="h-12 min-w-full bg-gradient-to-r from-blue-400 to-indigo-400 
+      grid grid-cols-10 place-content-stretch text-center place-items-center">
         <div className="col-start-1 col-span-2">
           Portfolio Test
         </div>
