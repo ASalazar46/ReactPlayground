@@ -10,12 +10,12 @@ function Landing() {
           <img src={placeImg} alt="placeholder" />
         </div>
         <div>
-          <p className="font-mono text-7xl">Hi, my name is [Insert name here]!</p>
+          <p className="font-mono sm:text-xl md:text-4xl lg:text-7xl">Hi, my name is [Insert name here]!</p>
+          <br/>
+          <br/> 
           <br/>
           <br/>
-          <br/>
-          <br/>
-          <p className="font-mono text-5xl">[Insert summary here]</p>
+          <p className="font-mono sm:text-base md:text-2xl lg:text-5xl">[Insert summary here]</p>
         </div>
       </div>
     </div>
