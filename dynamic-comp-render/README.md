@@ -1,0 +1,1 @@
+A simple program that dynamically creates 8 "Hello World!"'s and displays them on the screen (8 can be replaced with any integer >= 1)
