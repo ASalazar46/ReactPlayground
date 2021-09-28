@@ -8,14 +8,6 @@ export class Navbar extends React.Component {
         <div className="col-start-1 col-span-2 font-mono text-sm md:text-lg lg:text-2xl">
           Portfolio Test
         </div>
-        <div className="col-start-3 col-end-8 font-mono text-sm md:text-lg lg:text-2xl">
-          <label>Contact Me:        </label>
-          <select>
-              <option className="select-text">(###) ### - ####</option>
-              <option className="select-text">sample.email@srvcr.ext</option>
-              <option className="select-text">linkedin.com/my-prof</option>
-          </select>
-        </div>
         <button className="col-start-8 hover:bg-blue-100 font-mono text-sm md:text-lg lg:text-2xl">
           Essays
         </button>
