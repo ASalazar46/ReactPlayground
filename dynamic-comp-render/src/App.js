@@ -7,8 +7,8 @@ function App() {
   );
 }
 
-function HelloWorld() {
-  return <h1>Hello World!</h1>;
+function HelloWorld(props) {
+  return <h1>I am Hello World! #{props.number+1}</h1>;
 }
 
 function displayHelloWorld(i) {
@@ -18,7 +18,7 @@ function displayHelloWorld(i) {
   }
   return (
     <div>
-      {arr.map( (x) => ( <HelloWorld key={x} />) )}
+      {arr.map( (x) => ( <HelloWorld key={x} number={x}/>) )}
     </div>
   ); 
 }
