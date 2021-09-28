@@ -4,7 +4,7 @@ export class Navbar extends React.Component {
   render() {
     return (
       <div className="h-12 min-w-full bg-gradient-to-r from-blue-400 to-indigo-400 
-      grid grid-cols-10 place-content-stretch text-center place-items-center rounded-full">
+      grid grid-cols-10 place-content-stretch text-center place-items-center rounded-xl">
         <div className="col-start-1 col-span-2 font-mono text-sm md:text-lg lg:text-2xl">
           Portfolio Test
         </div>
