@@ -11,6 +11,9 @@ export class Navbar extends React.Component {
         <button className="col-start-1 col-span-2 font-mono text-sm md:text-lg lg:text-2xl">
           <Link to="/">Portfolio Test</Link>
         </button>
+        <button className="col-start-7 hover:bg-blue-100 font-mono text-sm md:text-lg lg:text-2xl">
+          <Link to="/aboutme">About Me</Link>
+        </button>
         <button className="col-start-8 hover:bg-blue-100 font-mono text-sm md:text-lg lg:text-2xl">
           <Link to="/essays">Essays</Link>
         </button>

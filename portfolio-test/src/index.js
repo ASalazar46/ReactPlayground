@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import EssayPage from "./pages/EssayPage";
 import WorksPage from "./pages/WorksPage";
 import ResumePage from "./pages/ResumePage";
+import AboutMePage from "./pages/AboutMePage";
 
 ReactDOM.render(
   <Router>
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Route path="/essays" component={EssayPage} />
     <Route path="/works" component={WorksPage} />
     <Route path="/resume" component={ResumePage} />
+    <Route path="/aboutme" component={AboutMePage} />
   </Router>,
   document.getElementById("root")
 );
