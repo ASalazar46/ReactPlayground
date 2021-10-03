@@ -1,4 +1,5 @@
 import React from "react";
+import { EssayCard } from "./EssayCard";
 
 export class ListEssays extends React.Component {
   state = {
@@ -20,9 +21,14 @@ export class ListEssays extends React.Component {
   };
 
   render() {
-    console.log("There are "+this.state.fileCount+" to list.");
-    if (this.state.fileCount > 1) {
-      return <div>There are {this.state.fileCount} files to list.</div>  
+    let x = 4; //replace x with this.state.fileCount once done with card
+    // add back proxy into package.json too   "proxy": "http://localhost:3001"
+    if (x > 1) {
+      return (
+        <div className="grid place-items-center">
+          <EssayCard />
+        </div>
+      )  
     } else if (this.state.fileCount === 0) {
       return <div>There are no essays to list.</div>  
     } else {
