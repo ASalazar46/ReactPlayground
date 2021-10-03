@@ -8,23 +8,22 @@ const port = 3001;
 app.listen(port, () =>
   console.log(`Server is running and listening on port ${port}!`)
 );
-app.get("/essaysOld", (req, res) => {
-  const essaysDir = "../Essays";
-  let fc = fs.readdirSync(essaysDir).length;
-  res.json({ count: fc });
-});
+
 app.get("/essays", (req, res) => {
   const essayDir = "../Essays";
-  const essayArr = fs.readdirSync(essayDir);
-  let metaArr = new Array(essayArr.length).fill(null);
-  if (essayArr.length > 0) {
-    for (let i = 0; i < essayArr.length; i++) {
-      const readFile = fs.readFileSync(essayDir + "/" + essayArr[i], "utf-8");
-      const fileContent = mdp.parse(readFile);
-      metaArr[i] = fileContent.metadata;
+  fs.readdir(essayDir, (err, files) => {
+    if (err) throw err;
+    else {
+      let metaArr = new Array(files.length);
+      for (let i = 0; i < files.length; i++) {
+        fs.readFile(essayDir + "/" + files[i], "utf-8", (err, data) => {
+          if (err) throw err;
+          else {
+            metaArr[i] = mdp.parse(data).metadata;
+            if (i === files.length - 1) res.send(metaArr);
+          }
+        });
+      }
     }
-    res.send(metaArr);
-  } else {
-    res.send("error: No essays to list");
-  }
+  });
 });
