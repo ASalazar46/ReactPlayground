@@ -24,9 +24,9 @@ export class ListEssays extends React.Component {
     const metaArr = this.state.fileMetaArr;
     if (metaArr.length > 0) {
       return (
-        <div className="grid place-items-center">
-          {metaArr.map((x) => (
-            <EssayCard meta={x} />
+        <div className="grid place-items-center space-y-2 mt-2">
+          {metaArr.map((x, index) => (
+            <EssayCard key={index} meta={x} />
           ))}
         </div>
       );

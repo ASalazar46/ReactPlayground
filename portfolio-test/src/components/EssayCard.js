@@ -8,10 +8,10 @@ export class EssayCard extends React.Component {
         <div className="col-start-1 self-center">
           <img className="p-4" src={imgholder} alt="placeholder" />
         </div>
-        <div className="col-start-2 col-span-4 self-center space-y-1">
-          <p className="text-center">{this.props.meta.title}</p>
-          <p className="text-center">{this.props.meta.date}</p>
-          <p className="text-center">{this.props.meta.summary}</p>
+        <div className="col-start-2 col-span-4 self-center p-4">
+          <p className="text-center text-base">{this.props.meta.title}</p>
+          <p className="text-center text-sm">{this.props.meta.date}</p>
+          <p className="text-center text-sm">{this.props.meta.summary}</p>
         </div>
       </div>  
     );  
