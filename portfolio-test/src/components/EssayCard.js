@@ -9,9 +9,9 @@ export class EssayCard extends React.Component {
           <img className="p-4" src={imgholder} alt="placeholder" />
         </div>
         <div className="col-start-2 col-span-4 self-center space-y-1">
-          <p className="text-center">I am a title</p>
-          <p className="text-center">I am a date</p>
-          <p className="text-center">I am a summary</p>
+          <p className="text-center">{this.props.meta.title}</p>
+          <p className="text-center">{this.props.meta.date}</p>
+          <p className="text-center">{this.props.meta.summary}</p>
         </div>
       </div>  
     );  

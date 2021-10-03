@@ -3,16 +3,16 @@ import { EssayCard } from "./EssayCard";
 
 export class ListEssays extends React.Component {
   state = {
-    fileCount: null,
-  };
+    fileMetaArr: []
+  }
 
   componentDidMount() {
-    this.getEssayCount()
-      .then((res) => this.setState({ fileCount: res.count }))
+    this.getEssayMeta()
+      .then((res) => this.setState({ fileMetaArr: res }))
       .catch((err) => console.log(err));
   }
 
-  getEssayCount = async () => {
+  getEssayMeta = async () => {
     const response = await fetch("/essays");
     const body = await response.json();
 
@@ -21,18 +21,19 @@ export class ListEssays extends React.Component {
   };
 
   render() {
-    let x = 4; //replace x with this.state.fileCount once done with card
-    // add back proxy into package.json too   "proxy": "http://localhost:3001"
-    if (x > 1) {
+    const metaArr = this.state.fileMetaArr;
+    if (metaArr.length > 0) {
       return (
         <div className="grid place-items-center">
-          <EssayCard />
+          {metaArr.map((x) => (
+            <EssayCard meta={x} />
+          ))}
         </div>
-      )  
-    } else if (this.state.fileCount === 0) {
-      return <div>There are no essays to list.</div>  
+      );
+    } else if (metaArr.length === 0) {
+      return <div>There are no essays to list.</div>;
     } else {
-      return <div>Something went wrong trying to list essays.</div>;  
+      return <div>Something went wrong trying to list essays.</div>;
     }
   }
 }

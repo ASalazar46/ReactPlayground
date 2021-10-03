@@ -23,8 +23,8 @@ app.get("/essays", (req, res) => {
       const fileContent = mdp.parse(readFile);
       metaArr[i] = fileContent.metadata;
     }
-    res.json({fileMeta: metaArr});
+    res.send(metaArr);
   } else {
-    res.json({ error: "No essays to list" });
+    res.send("error: No essays to list");
   }
 });
