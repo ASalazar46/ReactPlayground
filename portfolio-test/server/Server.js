@@ -16,8 +16,15 @@ app.get("/essaysOld", (req, res) => {
 app.get("/essays", (req, res) => {
   const essayDir = "../Essays";
   const essayArr = fs.readdirSync(essayDir);
-  const readFile = fs.readFileSync(essayDir+'/'+essayArr[0], 'utf-8');
-  const fileContent = mdp.parse(readFile);
-  console.log(fileContent.metadata);
-  res.json({fileMeta: fileContent.metadata});
+  let metaArr = new Array(essayArr.length).fill(null);
+  if (essayArr.length > 0) {
+    for (let i = 0; i < essayArr.length; i++) {
+      const readFile = fs.readFileSync(essayDir + "/" + essayArr[i], "utf-8");
+      const fileContent = mdp.parse(readFile);
+      metaArr[i] = fileContent.metadata;
+    }
+    res.json({fileMeta: metaArr});
+  } else {
+    res.json({ error: "No essays to list" });
+  }
 });
