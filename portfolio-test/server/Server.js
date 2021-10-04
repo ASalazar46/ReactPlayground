@@ -25,6 +25,16 @@ app.get("/essays", (req, res) => {
   }
 });
 
+app.get("/essays/:essName", (req, res) => {
+  const essayFile = "../_Essays/" + req.params.essName;
+  if (fs.existsSync(essayFile)) {
+    let fileContent = fs.readFileSync(essayFile, 'utf-8');
+    res.send(fileContent);
+  } else {
+    res.send(`${req.params.essName} does not exist.`);
+  }
+});
+
 app.get("/works", (req, res) => {
   const workDir = "../_Works";
   const workArr = fs.readdirSync(workDir);
