@@ -1,7 +1,7 @@
 ---
-title: JavaScript-ing My Future
-fileName: javascript-future-1.md
-date: September 6, 2019
+title: JavaScript-ing My Future  
+fileName: javascript-future-1.md  
+date: September 6, 2019  
 labels:
   - ICS 314
   - Software Engineering

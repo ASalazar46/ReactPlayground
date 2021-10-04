@@ -1,12 +1,12 @@
 ---
-title: Morse Code Application
-fileName: project-1.md
-date: January 7, 2019
+title: Morse Code Application  
+fileName: project-1.md  
+date: January 7, 2019  
 labels:
-  - Android Studio
-  - Java
-  - EE296
-summary: The final application build for my required class, EE296. It is a text-to-morse-code translator. 
+  - Android Studio  
+  - Java  
+  - EE296  
+summary: The final application build for my required class, EE296. It is a text-to-morse-code translator.  
 ---
 
 <img class="ui medium right floated rounded image" src="/images/project1pic.png">

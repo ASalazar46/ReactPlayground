@@ -1,15 +1,15 @@
 ---
-title: Beyond The Library
-fileName: project-4.md
-date: December 18, 2019
-labels:
-  - ICS 314
-  - Final Project
-  - Meteor
-  - IntelliJ IDEA
-  - GitHub
-  - Software Engineering
-summary: A web application, built with Meteor, that allows users to find study spots around the UH campus. 
+title: Beyond The Library  
+fileName: project-4.md  
+date: December 18, 2019  
+labels:  
+  - ICS 314  
+  - Final Project  
+  - Meteor  
+  - IntelliJ IDEA  
+  - GitHub  
+  - Software Engineering  
+summary: A web application, built with Meteor, that allows users to find study spots around the UH campus.   
 ---
 <img class="ui image" src="/images/landingpage.JPG">
 *The landing page to Beyond The Library web application*

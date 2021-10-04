@@ -1,7 +1,7 @@
 ---
-title: U and I are Framed (nicely) - A Look at the Semantic UI Framework
-fileName: UI-Framed.md
-date: October 10, 2019
+title: U and I are Framed (nicely) - A Look at the Semantic UI Framework  
+fileName: UI-Framed.md  
+date: October 10, 2019  
 labels:
   - ICS 314
   - Semantic UI

@@ -1,7 +1,7 @@
 ---
-title: Schrodinger's Coding Standards - A Reflection
-fileName: schrodinger-standards.md
-date: September 26, 2019
+title: Schrodinger's Coding Standards - A Reflection  
+fileName: schrodinger-standards.md  
+date: September 26, 2019  
 labels:
   - ICS 314
   - IntelliJ IDEA

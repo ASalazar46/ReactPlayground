@@ -1,12 +1,12 @@
 ---
-title: Text-Based RPG Adventure
-fileName: project-2.md
-date: January 7, 2018
-labels:
-  - Ubuntu/Linux
-  - C++
-  - EE205
-summary: The final application build for the class, EE205. It is a text-based RPG game. 
+title: Text-Based RPG Adventure  
+fileName: project-2.md  
+date: January 7, 2018  
+labels:  
+  - Ubuntu/Linux  
+  - C++  
+  - EE205  
+summary: The final application build for the class, EE205. It is a text-based RPG game.   
 ---
 
 <img class="ui medium right floated rounded image" src="/images/project2pic.png">

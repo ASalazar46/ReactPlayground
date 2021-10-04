@@ -1,13 +1,13 @@
 ---
-title: Smart Campus Energy Lab
-fileName: project-3.md
-date: August 26, 2019
-labels:
-  - Front-end
-  - Javascript
-  - EE396
-  - VIP Project
-summary: This is the project that I will assist in working on for my EE396 and EE496 projects. Retrieve weather data and display it onto a dashboard.  
+title: Smart Campus Energy Lab  
+fileName: project-3.md  
+date: August 26, 2019  
+labels:  
+  - Front-end  
+  - Javascript  
+  - EE396  
+  - VIP Project  
+summary: This is the project that I will assist in working on for my EE396 and EE496 projects. Retrieve weather data and display it onto a dashboard.    
 ---
 
 <img class="ui medium right floated rounded image" src="/images/project3pic.png"> 

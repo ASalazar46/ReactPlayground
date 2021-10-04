@@ -1,7 +1,7 @@
 ---
-title: Terminal Summary - One Last Essay on Software Engineering
-fileName: terminal-summary.md
-date: December 12, 2019
+title: Terminal Summary - One Last Essay on Software Engineering  
+fileName: terminal-summary.md  
+date: December 12, 2019  
 labels:
   - ICS 314
 ---

@@ -1,7 +1,7 @@
 ---
-title: Asking the Real (Good or bad) Questions
-fileName: asking-the-real-questions.md
-date: September 10, 2019
+title: Asking the Real (Good or bad) Questions  
+fileName: asking-the-real-questions.md  
+date: September 10, 2019  
 labels:
   - ICS 314
   - Open Source

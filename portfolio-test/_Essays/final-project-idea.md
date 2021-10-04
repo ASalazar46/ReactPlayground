@@ -1,7 +1,7 @@
 ---
-title: "Final Project Idea"
-fileName: final-project-idea.md
-date: November 5, 2019
+title: "Final Project Idea"  
+fileName: final-project-idea.md  
+date: November 5, 2019  
 labels:
   - Software Engineering
   - Meteor

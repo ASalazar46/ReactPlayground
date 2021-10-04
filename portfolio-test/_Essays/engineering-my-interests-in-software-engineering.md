@@ -1,7 +1,7 @@
 ---
-title: Engineering my Interest in Software Engineering
-fileName: engineering-my-interests-in-software-engineering.md
-date: September 2, 2019
+title: Engineering my Interest in Software Engineering  
+fileName: engineering-my-interests-in-software-engineering.md  
+date: September 2, 2019  
 labels:
   - ICS 314
   - Software Engineering
