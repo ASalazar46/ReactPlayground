@@ -11,6 +11,38 @@ app.listen(port, () =>
 
 app.get("/essays", (req, res) => {
   const essayDir = "../_Essays";
+  const essayArr = fs.readdirSync(essayDir);
+  let metaArr = new Array(essayArr.length).fill(null);
+  if (essayArr.length > 0) {
+    for (let i = 0; i < essayArr.length; i++) {
+      const readFile = fs.readFileSync(essayDir + "/" + essayArr[i], "utf-8");
+      const fileContent = mdp.parse(readFile);
+      metaArr[i] = fileContent.metadata;
+    }
+    res.send(metaArr);
+  } else {
+    res.send("error: No essays to list");
+  }
+});
+
+app.get("/works", (req, res) => {
+  const workDir = "../_Works";
+  const workArr = fs.readdirSync(workDir);
+  let metaArr = new Array(workArr.length).fill(null);
+  if (workArr.length > 0) {
+    for (let i = 0; i < workArr.length; i++) {
+      const readFile = fs.readFileSync(workDir + "/" + workArr[i], "utf-8");
+      const fileContent = mdp.parse(readFile);
+      metaArr[i] = fileContent.metadata;
+    }
+    res.send(metaArr);
+  } else {
+    res.send("error: No essays to list");
+  }
+});
+
+app.get("/essaysAsync", (req, res) => {
+  const essayDir = "../_Essays";
   fs.readdir(essayDir, (err, files) => {
     if (err) throw err;
     else {
@@ -28,7 +60,7 @@ app.get("/essays", (req, res) => {
   });
 });
 
-app.get("/works", (req, res) => {
+app.get("/worksAsync", (req, res) => {
   const worksDir = "../_Works";
   fs.readdir(worksDir, (err, files) => {
     if (err) throw err;
