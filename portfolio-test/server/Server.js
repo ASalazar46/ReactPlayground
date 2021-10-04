@@ -1,6 +1,11 @@
 const express = require("express");
 const fs = require("fs");
 const mdp = require("@cmdlucas/markdown-metadata");
+const md = require("markdown-it")({
+  html: true,
+  linkify: true,
+  typographer: true
+});
 //var cors = require('cors');
 const app = express();
 const port = 3001;
@@ -29,7 +34,9 @@ app.get("/essays/:essName", (req, res) => {
   const essayFile = "../_Essays/" + req.params.essName;
   if (fs.existsSync(essayFile)) {
     let fileContent = fs.readFileSync(essayFile, 'utf-8');
-    res.send(fileContent);
+    let mdConv = md.render(fileContent);
+    console.log(mdConv);
+    res.send(mdConv);
   } else {
     res.send(`${req.params.essName} does not exist.`);
   }
