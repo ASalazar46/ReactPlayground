@@ -1,11 +1,7 @@
 ---
-layout: project
-type: project
-image: images/morse.png
 title: Morse Code Application
-permalink: projects/EE296Project
-# All dates must be YYYY-MM-DD format!
-date: 2019-01-07
+fileName: project-1.md
+date: January 7, 2019
 labels:
   - Android Studio
   - Java

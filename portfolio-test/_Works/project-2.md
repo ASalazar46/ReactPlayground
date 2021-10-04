@@ -1,11 +1,7 @@
 ---
-layout: project
-type: project
-image: images/project2front.png
 title: Text-Based RPG Adventure
-permalink: projects/EE205Project
-# All dates must be YYYY-MM-DD format!
-date: 2018-01-07
+fileName: project-2.md
+date: January 7, 2018
 labels:
   - Ubuntu/Linux
   - C++

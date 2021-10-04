@@ -1,11 +1,7 @@
 ---
-layout: project
-type: project
-image: images/project3front.png
 title: Smart Campus Energy Lab
-permalink: projects/SCEL
-# All dates must be YYYY-MM-DD format!
-date: 2019-08-26
+fileName: project-3.md
+date: August 26, 2019
 labels:
   - Front-end
   - Javascript

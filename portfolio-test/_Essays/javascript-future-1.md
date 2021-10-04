@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: JavaScript-ing My Future
-# All dates must be YYYY-MM-DD format!
-date: 2019-09-06
+fileName: javascript-future-1.md
+date: September 6, 2019
 labels:
   - ICS 314
   - Software Engineering

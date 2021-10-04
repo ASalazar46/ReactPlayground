@@ -1,11 +1,7 @@
 ---
-layout: project
-type: project
-image: images/btl.png
 title: Beyond The Library
-permalink: projects/BeyondTheLibrary
-# All dates must be YYYY-MM-DD format!
-date: 2019-12-18
+fileName: project-4.md
+date: December 18, 2019
 labels:
   - ICS 314
   - Final Project

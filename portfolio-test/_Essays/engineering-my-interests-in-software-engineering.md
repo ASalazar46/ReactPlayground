@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: Engineering my Interest in Software Engineering
-# All dates must be YYYY-MM-DD format!
-date: 2019-09-02
+fileName: engineering-my-interests-in-software-engineering.md
+date: September 2, 2019
 labels:
   - ICS 314
   - Software Engineering

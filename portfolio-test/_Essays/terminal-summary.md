@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: Terminal Summary - One Last Essay on Software Engineering
-# All dates must be YYYY-MM-DD format!
-date: 2019-12-12
+fileName: terminal-summary.md
+date: December 12, 2019
 labels:
   - ICS 314
 ---

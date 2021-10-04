@@ -1,8 +1,7 @@
 ---
-layout: essay
-type: essay
 title: "Final Project Idea"
-date: 2019-11-05
+fileName: final-project-idea.md
+date: November 5, 2019
 labels:
   - Software Engineering
   - Meteor

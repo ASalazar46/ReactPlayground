@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: Asking the Real (Good or bad) Questions
-# All dates must be YYYY-MM-DD format!
-date: 2019-09-10
+fileName: asking-the-real-questions.md
+date: September 10, 2019
 labels:
   - ICS 314
   - Open Source

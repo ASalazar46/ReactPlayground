@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: Schrodinger's Coding Standards - A Reflection
-# All dates must be YYYY-MM-DD format!
-date: 2019-09-26
+fileName: schrodinger-standards.md
+date: September 26, 2019
 labels:
   - ICS 314
   - IntelliJ IDEA

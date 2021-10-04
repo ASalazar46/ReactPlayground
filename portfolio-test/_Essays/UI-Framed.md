@@ -1,9 +1,7 @@
 ---
-layout: essay
-type: essay
 title: U and I are Framed (nicely) - A Look at the Semantic UI Framework
-# All dates must be YYYY-MM-DD format!
-date: 2019-10-10
+fileName: UI-Framed.md
+date: October 10, 2019
 labels:
   - ICS 314
   - Semantic UI
