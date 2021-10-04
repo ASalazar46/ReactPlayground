@@ -8,7 +8,7 @@ export class Navbar extends React.Component {
         className="h-12 min-w-full bg-gradient-to-r from-blue-400 to-indigo-400 
       grid grid-cols-10 place-content-stretch text-center place-items-center rounded-xl"
       >
-        <button className="col-start-1 col-span-2 font-mono text-sm md:text-lg lg:text-2xl">
+        <button className="col-start-1 col-span-2 hover:bg-blue-100 font-mono text-sm md:text-lg lg:text-2xl">
           <Link to="/">Portfolio Test</Link>
         </button>
         <button className="col-start-7 hover:bg-blue-100 font-mono text-sm md:text-lg lg:text-2xl">
